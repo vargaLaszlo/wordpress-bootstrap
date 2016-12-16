@@ -30,7 +30,7 @@
 
 # Browser chace
 
-  <IfModule mod_expires.c>
+  ```<IfModule mod_expires.c>
   ExpiresActive On
   ExpiresByType image/jpg "access 1 month"
   ExpiresByType image/jpeg "access 1 month"
@@ -40,4 +40,4 @@
   ExpiresByType text/html "access 1 month"
   ExpiresByType image/x-icon "access 1 month"
   ExpiresDefault "access 1 month"
-  </IfModule>
+  </IfModule>```
