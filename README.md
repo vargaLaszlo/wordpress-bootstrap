@@ -18,6 +18,8 @@
 * related-posts-by-taxonomy
 * shortcode-widget
 * tablepress
+* the-events-calendar
+* the-events-calendar-shortcode
 * visual-editor-custom-buttons
 * widget-css-classes
 * wordpress-23-related-posts-plugin
