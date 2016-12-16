@@ -28,7 +28,7 @@
 * wp-super-cache
 * wysiwyg-widgets
 
-# Browser chace
+# Browser chace (.htaccess)
 
         <IfModule mod_expires.c>
         ExpiresActive On
@@ -40,4 +40,17 @@
         ExpiresByType text/html "access 1 month"
         ExpiresByType image/x-icon "access 1 month"
         ExpiresDefault "access 1 month"
+        </IfModule>
+        
+# Gzip (.htaccess)
+
+        <IfModule mod_gzip.c>
+        mod_gzip_on Yes
+        mod_gzip_dechunk Yes
+        mod_gzip_item_include file \.(html?|txt|css|js|php|pl)$
+        mod_gzip_item_include handler ^cgi-script$
+        mod_gzip_item_include mime ^text/.*
+        mod_gzip_item_include mime ^application/x-javascript.*
+        mod_gzip_item_exclude mime ^image/.*
+        mod_gzip_item_exclude rspheader ^Content-Encoding:.*gzip.*
         </IfModule>
