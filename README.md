@@ -2,19 +2,21 @@
 
 - [ ] URL works
 - [ ] Dump pages/posts are deleted
-- [ ] Sitemap is generated
+- [ ] Core, plugins are up to date
+- [ ] [No errors in W3C Validator](https://validator.w3.org)
 - [ ] Robots are enabled
+- [ ] Sitemap is generated
+- [ ] [Site is submitted to Goolge](https://www.google.com/webmasters/tools/submit-url)
+- [ ] [Site is submitted to Bing](http://www.bing.com/toolbox/submit-site-url)
 - [ ] [Analytics plugin runs](https://analytics.google.com)
 - [ ] [Google Search Console aceppts robots.txt and sitemap.xml](https://www.google.com/webmasters/tools/)
 - [ ] [Bing Webmaster Tool  aceppts sitemap.xml](http://www.bing.com/toolbox/webmaster)
 - [ ] [ReChapcha works on forms](https://www.google.com/recaptcha/intro/)
 - [ ] Forms submits are stored in db
+- [ ] Automatic backups are seduled in Backup plugin
 - [ ] Browser chace is on
 - [ ] Files are Gzipped
-- [ ] Automatic backups are seduled in Backup plugin
 - [ ] Chace plugin runs
-- [ ] [No errors in W3C Validator](https://validator.w3.org)
-- [ ] Core, plugins are up to date
 - [ ] Security barricade stands
 
 ## Plugins
