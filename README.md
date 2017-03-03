@@ -1,19 +1,23 @@
-# Go live checklist
+## Go live checklist
 
 - [ ] URL works
 - [ ] Dump pages/posts are deleted
 - [ ] Sitemap is generated
+- [ ] Robots are enabled
+- [ ] [Analytics plugin runs](https://analytics.google.com)
+- [ ] [Google Search Console aceppts robots.txt and sitemap.xml](https://www.google.com/webmasters/tools/)
+- [ ] [Bing Webmaster Tool  aceppts sitemap.xml](http://www.bing.com/toolbox/webmaster)
 - [ ] [ReChapcha works on forms](https://www.google.com/recaptcha/intro/)
-- [ ] Analytics tracks
-- [ ] Google Search Console aceppts sitemap.xml
-- [ ] Bing Webmaster Tool  aceppts sitemap.xml
+- [ ] Forms submits are stored in db
 - [ ] Browser chace is on
 - [ ] Files are Gzipped
 - [ ] Automatic backups are seduled in Backup plugin
 - [ ] Chace plugin runs
+- [ ] [No errors in W3C Validator](https://validator.w3.org)
+- [ ] Core, plugins are up to date
+- [ ] Security barricade stands
 
-
-# Plugins
+## Plugins
 
 * advanced-custom-fields
 * automatic-featured-images-from-videos
@@ -45,7 +49,9 @@
 * wp-super-cache
 * wysiwyg-widgets
 
-# Browser chace (.htaccess)
+## .htaccess
+
+### Browser chace
 
         <IfModule mod_expires.c>
         ExpiresActive On
@@ -59,7 +65,7 @@
         ExpiresDefault "access 1 month"
         </IfModule>
         
-# Gzip (.htaccess)
+### Gzip
 
         <IfModule mod_gzip.c>
         mod_gzip_on Yes
