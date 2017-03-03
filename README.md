@@ -15,6 +15,7 @@
 - [ ] [ReChapcha works on forms](https://www.google.com/recaptcha/intro/)
 - [ ] Forms submits are stored in db
 - [ ] Automatic backups are seduled in Backup plugin
+- [ ] Site is able to send emails
 - [ ] Browser chace is on
 - [ ] Files are Gzipped
 - [ ] Chace plugin runs
