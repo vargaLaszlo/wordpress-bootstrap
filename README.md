@@ -1,3 +1,18 @@
+# Go live checklist
+
+- [ ] URL works
+- [ ] Dump pages/posts are deleted
+- [ ] Sitemap is generated
+- [ ] [ReChapcha works on forms](https://www.google.com/recaptcha/intro/)
+- [ ] Analytics tracks
+- [ ] Google Search Console aceppts sitemap.xml
+- [ ] Bing Webmaster Tool  aceppts sitemap.xml
+- [ ] Browser chace is on
+- [ ] Files are Gzipped
+- [ ] Automatic backups are seduled in Backup plugin
+- [ ] Chace plugin runs
+
+
 # Plugins
 
 * advanced-custom-fields
