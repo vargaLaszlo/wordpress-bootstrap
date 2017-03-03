@@ -4,6 +4,7 @@
 - [ ] Dump pages/posts are deleted
 - [ ] Core, plugins are up to date
 - [ ] [No errors in W3C Validator](https://validator.w3.org)
+- [ ] No errors in Chrome Dev Tools console
 - [ ] Robots are enabled
 - [ ] Sitemap is generated
 - [ ] [Site is submitted to Goolge](https://www.google.com/webmasters/tools/submit-url)
