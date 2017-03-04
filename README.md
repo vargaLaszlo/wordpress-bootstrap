@@ -23,7 +23,7 @@
 
 ## Docker commands
 
-'''docker exec -it ###_wordpress_1 bash'''
+´´´docker exec -it ###_wordpress_1 bash´´´
 
 ## Plugins
 
