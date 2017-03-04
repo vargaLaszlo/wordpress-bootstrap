@@ -2,6 +2,7 @@
 
 - [ ] URL works
 - [ ] Dump pages, posts, images are deleted
+- [ ] No provisions
 - [ ] Core, plugins are up to date
 - [ ] [No errors in W3C Validator](https://validator.w3.org)
 - [ ] No errors in Chrome Dev Tools console
