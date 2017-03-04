@@ -23,7 +23,13 @@
 
 ## Docker commands
 
+Start bash in container
+
         docker exec -it ###_wordpress_1 bash
+        
+Fix www-data user (fixes update error after restart the container)
+        
+        usermod -u 1000 www-data
 
 ## Plugins
 
