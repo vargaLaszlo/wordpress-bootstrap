@@ -21,6 +21,10 @@
 - [ ] Chace plugin runs
 - [ ] Security barricade stands
 
+## Docker commands
+
+'''docker exec -it ###_wordpress_1 bash'''
+
 ## Plugins
 
 * advanced-custom-fields
