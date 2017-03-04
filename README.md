@@ -91,3 +91,7 @@ Fix www-data user (fixes update error after restart the container)
         mod_gzip_item_exclude mime ^image/.*
         mod_gzip_item_exclude rspheader ^Content-Encoding:.*gzip.*
         </IfModule>
+        
+## Resources
+
+- [Docker Wordpress](https://github.com/docker-library/wordpress)
