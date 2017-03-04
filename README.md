@@ -36,6 +36,7 @@ Fix www-data user (fixes update error after restart the container)
 * advanced-custom-fields
 * automatic-featured-images-from-videos
 * better-delete-revision
+* bootstrap-3-shortcodes
 * bootstrap-for-contact-form-7
 * breadcrumb-navxt
 * broken-link-checker
@@ -49,6 +50,7 @@ Fix www-data user (fixes update error after restart the container)
 * google-sitemap-generator
 * login-lockdown
 * related-posts-by-taxonomy
+* sf-adminbar-tools
 * shortcode-widget
 * tablepress
 * the-events-calendar
@@ -58,6 +60,9 @@ Fix www-data user (fixes update error after restart the container)
 * wordpress-23-related-posts-plugin
 * wordpress-table-of-contents
 * wp-db-backup
+* wp-github-sync
+* wp-github-sync-meta
+* wp-markdown-editor
 * wp-meta-seo
 * wp-page-numbers
 * wp-super-cache
