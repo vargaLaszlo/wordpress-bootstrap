@@ -105,4 +105,6 @@ Fix www-data user (fixes update error after restart the container)
 
 ## AWS things
 
+### Open port
+
         iptables -A INPUT -i eth0 -p tcp -m tcp --dport 8090 -j ACCEPT
