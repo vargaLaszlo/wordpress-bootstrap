@@ -108,3 +108,10 @@ Fix www-data user (fixes update error after restart the container)
 ### Open port
 
         iptables -A INPUT -i eth0 -p tcp -m tcp --dport 8090 -j ACCEPT
+        
+## mail out of a container issue
+
+[Fix](https://github.com/docker-library/php/issues/135#issuecomment-277199026)
+
+        echo "127.0.0.1 noreply.domain.com $(hostname)" >> /etc/hosts
+      
