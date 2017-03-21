@@ -37,7 +37,8 @@ Fix www-data user (fixes update error after restart the container)
 
 * advanced-custom-fields
 * automatic-featured-images-from-videos
-* better-delete-revision
+* ~~better-delete-revision~~
+* delete-post-revisions-on-single-click
 * bootstrap-3-shortcodes
 * bootstrap-for-contact-form-7
 * breadcrumb-navxt
