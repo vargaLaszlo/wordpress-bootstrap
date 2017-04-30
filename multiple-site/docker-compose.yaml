@@ -1,0 +1,75 @@
+version: '2'
+ 
+services:
+  site-a:
+    image: wordpress
+    links:
+      - mysql:mysql
+    network_mode: bridge
+    expose:
+      - 80
+    depends_on:
+      - mysql
+    environment:
+      WORDPRESS_DB_NAME: site-a
+      WORDPRESS_DB_USER: root
+      WORDPRESS_DB_PASSWORD: example
+      VIRTUAL_HOST: qqwweerr.info
+    volumes:
+      - ./site-a:/var/www/html
+
+  site-b:
+    image: wordpress
+    links:
+      - mysql:mysql
+    network_mode: bridge
+    expose:
+      - 80
+    depends_on:
+      - mysql
+    environment:
+      WORDPRESS_DB_NAME: site-b
+      WORDPRESS_DB_USER: root
+      WORDPRESS_DB_PASSWORD: example
+      VIRTUAL_HOST: site-b.qqwweerr.info
+    volumes:
+      - ./site-b:/var/www/html
+
+  site-c:
+    image: wordpress
+    links:
+      - mysql:mysql
+    network_mode: bridge
+    expose:
+      - 80
+    depends_on:
+      - mysql
+    environment:
+      WORDPRESS_DB_NAME: site-c
+      WORDPRESS_DB_USER: root
+      WORDPRESS_DB_PASSWORD: example
+      VIRTUAL_HOST: site-c.qqwweerr.info
+    volumes:
+      - ./site-c:/var/www/html
+
+  mysql:
+    image: mysql
+    network_mode: bridge
+    environment:
+      MYSQL_ROOT_PASSWORD: example 
+    volumes:
+      - ./db:/var/lib/mysql
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    links:
+      - mysql:db
+    network_mode: bridge
+    expose:
+      - 80
+    depends_on:
+      - mysql
+    environment:
+      MYSQL_USERNAME: root
+      MYSQL_ROOT_PASSWORD: example
+      VIRTUAL_HOST: phpmyadmin.qqwweerr.info

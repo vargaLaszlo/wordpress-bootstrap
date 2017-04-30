@@ -1,0 +1,39 @@
+version: '2'
+ 
+services:
+  wordpress:
+    image: wordpress
+    links:
+      - mysql:mysql
+    network_mode: bridge
+    expose:
+      - 80
+    depends_on:
+      - mysql
+    environment:
+      WORDPRESS_DB_PASSWORD: example
+      VIRTUAL_HOST: qqwweerr.info
+    volumes:
+      - .:/var/www/html
+ 
+  mysql:
+    image: mysql
+    network_mode: bridge
+    environment:
+      MYSQL_ROOT_PASSWORD: example    
+    volumes:
+      - ./db:/var/lib/mysql
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    links:
+      - mysql:db
+    network_mode: bridge
+    expose:
+      - 80
+    depends_on:
+      - mysql
+    environment:
+      MYSQL_USERNAME: root
+      MYSQL_ROOT_PASSWORD: example
+      VIRTUAL_HOST: phpmyadmin.qqwweerr.info
