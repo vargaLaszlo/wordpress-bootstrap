@@ -66,6 +66,7 @@ Fix www-data user (fixes update error after restart the container)
 * wp-github-sync
 * wp-github-sync-meta
 * wp-markdown-editor
+* wp-members
 * wp-meta-seo
 * wp-dashboard-notes
 * wp-page-numbers
