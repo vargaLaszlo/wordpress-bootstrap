@@ -53,6 +53,7 @@ Fix www-data user (fixes update error after restart the container)
 * google-sitemap-generator
 * login-lockdown
 * related-posts-by-taxonomy
+* remove-wordpress-overhead
 * sf-adminbar-tools
 * shortcode-widget
 * tablepress
