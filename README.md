@@ -118,4 +118,13 @@ Fix www-data user (fixes update error after restart the container)
 [Fix](https://github.com/docker-library/php/issues/135#issuecomment-277199026)
 
         echo "127.0.0.1 noreply.domain.com $(hostname)" >> /etc/hosts
-      
+        
+## VSCode plugins
+* PHP IntelliSense
+* PHP Debug
+* Wordpress Snippet
+* ACF-Snippet
+* Bootstrap 3 Snippets
+* Sass Formatter
+* jQuery Code Snippets
+* Icon Fonts
