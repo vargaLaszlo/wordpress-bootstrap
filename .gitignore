@@ -33,3 +33,7 @@ googled*.html
 ### Sass ###
 .sass-cache/
 *.css.map
+
+### Composer ###
+composer.phar
+/vendor/
