@@ -128,3 +128,7 @@ Fix www-data user (fixes update error after restart the container)
 * Sass Formatter
 * jQuery Code Snippets
 * Icon Fonts
+* Composer
+...* [Composer](https://getcomposer.org/)
+...* [PHP Code Sniffer](https://github.com/squizlabs/PHP_CodeSniffer)
+...* [WordPress-Coding-Standards](https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards)
