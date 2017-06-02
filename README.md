@@ -71,6 +71,7 @@ Fix www-data user (fixes update error after restart the container)
 * wp-meta-seo
 * wp-dashboard-notes
 * wp-page-numbers
+* wp-recaptcha-integration
 * wp-super-cache
 * wysiwyg-widgets
 
