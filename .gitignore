@@ -36,4 +36,7 @@ googled*.html
 
 ### Composer ###
 composer.phar
-/vendor/
+composer.json
+composer.lock
+vendor/
+
