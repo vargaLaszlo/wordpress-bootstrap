@@ -53,6 +53,7 @@ Fix www-data user (fixes update error after restart the container)
 * google-sitemap-generator
 * login-lockdown
 * related-posts-by-taxonomy
+* remove-wordpress-overhead
 * sf-adminbar-tools
 * shortcode-widget
 * tablepress
@@ -70,6 +71,7 @@ Fix www-data user (fixes update error after restart the container)
 * wp-meta-seo
 * wp-dashboard-notes
 * wp-page-numbers
+* wp-recaptcha-integration
 * wp-super-cache
 * wysiwyg-widgets
 
@@ -101,10 +103,6 @@ Fix www-data user (fixes update error after restart the container)
         mod_gzip_item_exclude mime ^image/.*
         mod_gzip_item_exclude rspheader ^Content-Encoding:.*gzip.*
         </IfModule>
-        
-## Resources
-
-- [Docker Wordpress](https://github.com/docker-library/wordpress)
 
 ## AWS things
 
@@ -117,4 +115,27 @@ Fix www-data user (fixes update error after restart the container)
 [Fix](https://github.com/docker-library/php/issues/135#issuecomment-277199026)
 
         echo "127.0.0.1 noreply.domain.com $(hostname)" >> /etc/hosts
-      
+        
+## VSCode plugins
+* PHP IntelliSense
+* PHP Debug
+* Wordpress Snippet
+* ACF-Snippet
+* Bootstrap 3 Snippets
+* Sass Formatter
+* jQuery Code Snippets
+* Icon Fonts
+* Composer
+    * [Composer](https://getcomposer.org/)
+    * [PHP Code Sniffer](https://github.com/squizlabs/PHP_CodeSniffer)
+    * [WordPress-Coding-Standards](https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards)
+    
+## Resources
+
+- [Docker Wordpress](https://github.com/docker-library/wordpress)
+- [Docker MySQL](https://hub.docker.com/_/mysql/)
+- [Docker PHPMyAdmin](https://hub.docker.com/r/phpmyadmin/phpmyadmin/)
+- [Docker WP-CLI](https://hub.docker.com/r/tatemz/wp-cli/)
+- [Docker NGINX Proxy](https://hub.docker.com/r/jwilder/nginx-proxy/)
+- [VS Code for WordPress Development](https://tommcfarlin.com/vs-code-wordpress/)
+- [Setting Up PHP CodeSniffer in Visual Studio Code](https://tommcfarlin.com/php-codesniffer-in-visual-studio-code/)
