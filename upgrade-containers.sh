@@ -6,11 +6,7 @@
 # your files, and database!
 
 # Pull Wordpress and service containers
-docker pull wordpress
-docker pull mysql
-docker pull phpmyadmin/phpmyadmin
-docker pull tatemz/wp-cli
-docker pull jwilder/nginx-proxy
+docker-compose pull
 
 # Stop and remove containers
 docker-compose down
