@@ -7,7 +7,7 @@ function is_blog () {
 
 // Custom post type query args, with custom taxonomy
 $args = array(
-    'post_type' => array( 'downloads' ),
+    'post_type' => array( 'post_type_slug' ),
     'tax_query' => array(
         array(
             'taxonomy' => 'tax_slug',
