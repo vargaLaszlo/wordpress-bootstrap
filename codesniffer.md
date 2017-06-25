@@ -9,28 +9,28 @@
 
 ## Overwrite line character limit
 
-Create Standards/WPDEV/ruleset.xml file into PHPCS folder
-
-CodeSniffer folder Ubuntu: /usr/share/php/PHP/CodeSniffer/
+Creat a phpcs.xml file in the project/theme root folder, with the following content:
 
 ```
-    <?xml version="1.0"?>
+<?xml version="1.0"?>
     <ruleset name="WPDEV">
      <description>Overwrite line limit</description>
 
     <!-- Include the whole PHPCS standard -->
-     <rule ref="PHPCS"/>
-
+	
      <rule ref="Generic.Files.LineLength">
       <properties>
-       <property name="lineLimit" value="150"/>
-       <property name="absoluteLineLimit" value="0"/>
+       <property name="lineLimit" value="200"/>
+       <property name="absoluteLineLimit" value="200"/>
       </properties>
      </rule>
     </ruleset>
 ```
-In terminal hit:
+## Exclude folders
 
+Add to phpxs.xml:
 ```
-    composer update
+  <exclude-pattern>/folder/*</exclude-pattern>
+  <exclude-pattern>/file.txt</exclude-pattern>
 ```
+
