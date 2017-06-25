@@ -1,17 +1,19 @@
-# Tab size settings
+# Compozer, PHP Code Sniffer, WordPress Coding Standards finetune
 
-´´´
+## Tab size settings
+
+```
   "editor.tabSize": 4,
   "editor.insertSpaces": false
-´´´
+```
 
-# Overwrite line character limit
+## Overwrite line character limit
 
 Create Standards/WPDEV/ruleset.xml file into PHPCS folder
 
 CodeSniffer folder Ubuntu: /usr/share/php/PHP/CodeSniffer/
 
-´´´
+```
     <?xml version="1.0"?>
     <ruleset name="WPDEV">
      <description>Overwrite line limit</description>
@@ -26,9 +28,9 @@ CodeSniffer folder Ubuntu: /usr/share/php/PHP/CodeSniffer/
       </properties>
      </rule>
     </ruleset>
-´´´
-In terminal hit
+```
+In terminal hit:
 
-´´´
+```
     composer update
-´´´
+```
