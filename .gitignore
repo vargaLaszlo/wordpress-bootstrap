@@ -27,16 +27,17 @@ log/
 BingSiteAuth.xml
 googled*.html
 
-### VSCode ###
-.vscode
-
 ### Sass ###
 .sass-cache/
 *.css.map
 
-### Composer ###
+### VSCode ###
+.vscode
+
+### Composer, PHPCS ###
+vendor/
 composer.phar
 composer.json
 composer.lock
-vendor/
+phpcs.xml
 
