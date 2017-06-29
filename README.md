@@ -1,3 +1,7 @@
+# Wordpress Bootstrap
+
+This repository is a resource collection for WordpRess sites running on Docker.
+
 ## Go live checklist
 
 - [ ] URL works
