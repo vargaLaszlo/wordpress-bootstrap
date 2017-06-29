@@ -21,7 +21,7 @@
 - [ ] Browser chace is on
 - [ ] Files are Gzipped
 - [ ] Chace plugin runs
-- [ ] Security barricade stands
+- [ ] Security barricade stands, and site is checked by [WPScan](https://wpscan.org/)
 
 ## Docker commands
 
