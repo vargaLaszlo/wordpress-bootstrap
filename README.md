@@ -117,6 +117,7 @@ Fix www-data user (fixes update error after restart the container)
         echo "127.0.0.1 noreply.domain.com $(hostname)" >> /etc/hosts
         
 ## VSCode plugins
+
 * PHP IntelliSense
 * PHP Debug
 * Wordpress Snippet
@@ -129,14 +130,25 @@ Fix www-data user (fixes update error after restart the container)
     * [Composer](https://getcomposer.org/)
     * [PHP Code Sniffer](https://github.com/squizlabs/PHP_CodeSniffer)
     * [WordPress-Coding-Standards](https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards)
-    
+
 ## Resources
+
+### Docker images
 
 - [Docker Wordpress](https://github.com/docker-library/wordpress)
 - [Docker MySQL](https://hub.docker.com/_/mysql/)
 - [Docker PHPMyAdmin](https://hub.docker.com/r/phpmyadmin/phpmyadmin/)
 - [Docker WP-CLI](https://hub.docker.com/r/tatemz/wp-cli/)
 - [Docker NGINX Proxy](https://hub.docker.com/r/jwilder/nginx-proxy/)
+
+### Codesniffer
+
 - [PHP CodeSniffer and WordPress Coding Standards with VS Code](https://github.com/tommcfarlin/phpcs-wpcs-vscode)
 - [VS Code for WordPress Development](https://tommcfarlin.com/vs-code-wordpress/)
 - [Setting Up PHP CodeSniffer in Visual Studio Code](https://tommcfarlin.com/php-codesniffer-in-visual-studio-code/)
+
+### Security
+
+- [Attacking WordPress](https://hackertarget.com/attacking-wordpress/)
+- [WPScan](https://wpscan.org/)
+- [WPScan docker](https://hub.docker.com/r/wpscanteam/wpscan/)
