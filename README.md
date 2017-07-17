@@ -120,7 +120,7 @@ Fix www-data user (fixes update error after restart the container)
         RewriteRule ^wp-includes/theme-compat/ - [F,L]
         </IfModule>
         
-# Block WordPress xmlrpc.php requests
+### Block WordPress xmlrpc.php requests
 
         <Files xmlrpc.php>
         order deny,allow
