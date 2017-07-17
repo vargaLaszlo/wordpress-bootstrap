@@ -119,6 +119,14 @@ Fix www-data user (fixes update error after restart the container)
         RewriteRule ^wp-includes/js/tinymce/langs/.+\.php - [F,L]
         RewriteRule ^wp-includes/theme-compat/ - [F,L]
         </IfModule>
+        
+# Block WordPress xmlrpc.php requests
+
+        <Files xmlrpc.php>
+        order deny,allow
+        deny from all
+        allow from 123.123.123.123
+        </Files>
 
 ## AWS things
 
