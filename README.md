@@ -108,7 +108,7 @@ Fix www-data user (fixes update error after restart the container)
         mod_gzip_item_exclude rspheader ^Content-Encoding:.*gzip.*
         </IfModule>
         
-### Block includes folder
+### Block include folders, and .git folder
 
         <IfModule mod_rewrite.c>
         RewriteEngine On
@@ -118,6 +118,7 @@ Fix www-data user (fixes update error after restart the container)
         RewriteRule ^wp-includes/[^/]+\.php$ - [F,L]
         RewriteRule ^wp-includes/js/tinymce/langs/.+\.php - [F,L]
         RewriteRule ^wp-includes/theme-compat/ - [F,L]
+        RewriteRule ^.git/ - [F,L]
         </IfModule>
         
 ### Block WordPress xmlrpc.php requests
