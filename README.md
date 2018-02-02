@@ -143,10 +143,14 @@ Fix www-data user (fixes update error after restart the container)
         
 ## VSCode plugins
 
+* Wordpress VS Code Extension Pack 
 * PHP IntelliSense
 * PHP Debug
+* phpcs
+* WPCS Whitelist Flags
 * Wordpress Snippet
 * ACF-Snippet
+* WooCommerce - Snippets & autocomplete
 * Bootstrap 3 Snippets
 * Sass Formatter
 * jQuery Code Snippets
@@ -167,6 +171,8 @@ Fix www-data user (fixes update error after restart the container)
 - [Docker NGINX Proxy](https://hub.docker.com/r/jwilder/nginx-proxy/)
 
 ### Codesniffer
+
+        sudo apt-get install php-codesniffer
 
 - [PHP CodeSniffer and WordPress Coding Standards with VS Code](https://github.com/tommcfarlin/phpcs-wpcs-vscode)
 - [VS Code for WordPress Development](https://tommcfarlin.com/vs-code-wordpress/)
