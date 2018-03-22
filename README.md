@@ -131,9 +131,7 @@ Fix www-data user (fixes update error after restart the container)
         
 ## File premissions
 
-        sudo chown -R www-data:www-data \
-        && sudo find /var/www/wordpress/ -type d -exec sudo chmod 755 {} \; \
-        && sudo find /var/www/wordpress/ -type f -exec sudo chmod 644 {} \; \
+        sudo chown -R www-data:www-data ./ && sudo find ./ -type d -exec sudo chmod 755 {} \; && sudo find ./ -type f -exec sudo chmod 644 {} \;
 
 ## AWS things
 
