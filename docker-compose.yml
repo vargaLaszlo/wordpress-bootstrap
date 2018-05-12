@@ -1,38 +1,62 @@
-version: '2'
- 
+version: '3.5'
+
 services:
-  wordpress:
-    image: wordpress
-    ports:
-      - 8100:80
-    environment:
-      WORDPRESS_DB_PASSWORD: kiscica
-    volumes:
-      - .:/var/www/html
-      - ./log:/var/log/apache2/
- 
   mysql:
-    image: mysql
+    container_name: mysql
+    image: mysql:5.7
+    restart: always
+    networks:
+      - wp
     environment:
-      MYSQL_ROOT_PASSWORD: kiscica    
+      MYSQL_ROOT_PASSWORD: nagycica
+      MYSQL_DATABASE: wordpress
+      MYSQL_USER: wordpress
+      MYSQL_PASSWORD: nagycica
     volumes:
       - ./db:/var/lib/mysql
 
-  phpmyadmin:
-    image: phpmyadmin/phpmyadmin
-    links:
-      - mysql:db
+  wordpress:
+    container_name: wordpress
+    image: wordpress
+    depends_on:
+      - mysql
+    restart: always
     ports:
-      - 8101:80
+      - "9000:80"
+    networks:
+      - wp
     environment:
+      WORDPRESS_DB_HOST: mysql:3306
+      WORDPRESS_DB_USER: wordpress
+      WORDPRESS_DB_PASSWORD: nagycica
+    volumes:
+      - .:/var/www/html
+      - ./log:/var/log/apache2/
+
+  phpmyadmin:
+    container_name: phpmyadmin
+    image: phpmyadmin/phpmyadmin
+    depends_on:
+      - mysql
+    restart: always
+    ports:
+      - 9001:80
+    networks:
+      - wp
+    environment:
+      PMA_ARBITRARY: 1
       MYSQL_USERNAME: root
-      MYSQL_ROOT_PASSWORD: kiscica
- 
-  wpcli: 
-    image: tatemz/wp-cli
-    volumes_from:
-        - wordpress
-    links:
-        - mysql:mysql
+      MYSQL_ROOT_PASSWORD: nagycica
+
+  wpcli:
+    container_name: wpcli
+    image: wordpress:cli
+    networks:
+      - wp
     entrypoint: wp
     command: "--info"
+    volumes:
+      - .:/var/www/html
+
+networks:
+  wp:
