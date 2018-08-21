@@ -176,7 +176,7 @@ Fix www-data user (fixes update error after restart the container)
 
 ### Codesniffer
 
-        sudo apt-get install php-codesniffer
+        sudo apt install php-codesniffer
 
 - [PHP CodeSniffer and WordPress Coding Standards with VS Code](https://github.com/tommcfarlin/phpcs-wpcs-vscode)
 - [VS Code for WordPress Development](https://tommcfarlin.com/vs-code-wordpress/)
@@ -193,3 +193,5 @@ Fix www-data user (fixes update error after restart the container)
 - [Gain Control of WordPress by Exploiting XML-RPC](https://null-byte.wonderhowto.com/how-to/gain-control-wordpress-by-exploiting-xml-rpc-0174864/)
 - [Password lists](https://wiki.skullsecurity.org/index.php?title=Passwords)
 - [Check URL](https://www.virustotal.com/#/home/url)
+
+        sudo apt install nmap zenmap
