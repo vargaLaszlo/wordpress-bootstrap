@@ -166,6 +166,10 @@ Fix www-data user (fixes update error after restart the container)
 
 ## Resources
 
+### Theme testing
+
+- [theme-unit-test](https://github.com/WPTRT/theme-unit-test)
+
 ### Docker images
 
 - [Docker Wordpress](https://github.com/docker-library/wordpress)
