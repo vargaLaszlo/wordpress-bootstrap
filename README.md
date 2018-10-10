@@ -25,6 +25,7 @@ This repository is a resource collection for WordpRess sites running on Docker.
 - [ ] Browser chace is on
 - [ ] Files are Gzipped
 - [ ] Chace plugin runs
+- [ ] Comment blacklist is filled
 - [ ] Security barricade stands, and site is checked by [WPScan](https://wpscan.org/)
 
 ## Docker commands
@@ -163,12 +164,16 @@ Fix www-data user (fixes update error after restart the container)
     * [Composer](https://getcomposer.org/)
     * [PHP Code Sniffer](https://github.com/squizlabs/PHP_CodeSniffer)
     * [WordPress-Coding-Standards](https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards)
-
+    
 ## Resources
 
 ### Theme testing
 
-- [theme-unit-test](https://github.com/WPTRT/theme-unit-test)
+- [Theme unit test](https://github.com/WPTRT/theme-unit-test)
+
+## Spam
+
+- Wordpress comment blacklist(https://github.com/splorp/wordpress-comment-blacklist)
 
 ### Docker images
 
