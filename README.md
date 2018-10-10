@@ -171,7 +171,7 @@ Fix www-data user (fixes update error after restart the container)
 
 - [Theme unit test](https://github.com/WPTRT/theme-unit-test)
 
-## Spam
+### Spam
 
 - [Wordpress comment blacklist](https://github.com/splorp/wordpress-comment-blacklist)
 
