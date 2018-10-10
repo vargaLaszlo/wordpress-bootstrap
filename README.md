@@ -173,7 +173,7 @@ Fix www-data user (fixes update error after restart the container)
 
 ## Spam
 
-- Wordpress comment blacklist(https://github.com/splorp/wordpress-comment-blacklist)
+- [Wordpress comment blacklist](https://github.com/splorp/wordpress-comment-blacklist)
 
 ### Docker images
 
