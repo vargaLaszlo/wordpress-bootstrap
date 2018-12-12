@@ -145,8 +145,10 @@ Fix www-data user (fixes update error after restart the container)
 [Fix](https://github.com/docker-library/php/issues/135#issuecomment-277199026)
 
         echo "127.0.0.1 noreply.domain.com $(hostname)" >> /etc/hosts
-        
-## VSCode plugins
+
+## Resources
+
+### VSCode plugins
 
 * Wordpress VS Code Extension Pack 
 * PHP IntelliSense
@@ -165,7 +167,10 @@ Fix www-data user (fixes update error after restart the container)
     * [PHP Code Sniffer](https://github.com/squizlabs/PHP_CodeSniffer)
     * [WordPress-Coding-Standards](https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards)
     
-## Resources
+### Tools
+
+- [Search-Replace-DB](https://github.com/interconnectit/Search-Replace-DB)
+- [MYSQL dump splitter](https://gist.github.com/panique/5896376)
 
 ### Theme testing
 
